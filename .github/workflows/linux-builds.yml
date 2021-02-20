@@ -53,12 +53,12 @@ jobs:
           - cxx: clang++-6.0
             build_type: Debug
             std: 17
-            other_pkgs: clang-6.0
+            other_pkgs: clang-6.0 libstdc++-8-dev
             surrogates: OFF
           - cxx: clang++-6.0
             build_type: Release
             std: 17
-            other_pkgs: clang-6.0
+            other_pkgs: clang-6.0 libstdc++-8-dev
             surrogates: OFF
 
     steps:

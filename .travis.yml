@@ -67,15 +67,6 @@ matrix:
       addons:
           apt:
               sources: *all_sources
-              packages: ['clang-6.0', 'libstdc++-8-dev']
-      env: COMPILER='clang++-6.0' CPP17=1
-
-
-    - os: linux
-      compiler: clang
-      addons:
-          apt:
-              sources: *all_sources
               packages: ['clang-8', 'libstdc++-8-dev']
       env: COMPILER='clang++-8' CPP17=1 EXAMPLES=1 COVERAGE=1 EXTRAS=1
 
