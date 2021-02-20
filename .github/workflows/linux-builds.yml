@@ -49,6 +49,17 @@ jobs:
             std: 17
             other_pkgs: clang-10
             surrogates: OFF
+        # Clang 6 + C++17
+          - cxx: clang++-6.0
+            build_type: Debug
+            std: 17
+            other_pkgs: clang-6.0
+            surrogates: OFF
+          - cxx: clang++-6.0
+            build_type: Release
+            std: 17
+            other_pkgs: clang-6.0
+            surrogates: OFF
 
     steps:
     - uses: actions/checkout@v2
